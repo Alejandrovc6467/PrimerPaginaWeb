@@ -1,0 +1,85 @@
+.animacion{
+    display: flex;
+    justify-content: center;
+}
+
+
+.face{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    animation: smile 2s infinite alternate;
+}
+
+.eyes{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eye{
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.mouth{
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    background-color: transparent;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 50% 50%;
+    left: 20%;
+    bottom: 20%;
+}
+
+
+@keyframes smile{
+
+    0% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(5px) rotate(5deg);
+    }
+
+}
+
+
+
+/*botones*/
+
+.botones{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.botones button{
+   padding: 10px 30px;
+   border: none;
+   background-color: rgb(84, 84, 255);
+   color: white;
+   font-family: sans-serif;
+   font-weight: 500;
+   font-size: 17px;
+   border-radius: 15px;
+}
+
+
+.buttom_left:hover {
+    box-shadow: inset 400px 0 0 0 rgb(59, 164, 250);
+}
+

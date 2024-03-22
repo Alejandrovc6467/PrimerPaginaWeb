@@ -1,0 +1,338 @@
+.home_contenido{
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+/*encabezado*******************************************************/
+.home_encabezado{
+    width: 100%;
+    display: flex;
+    /* border: 2px solid #6A7AFF; */
+    border-radius: 25px;
+    /* border-bottom: 3px solid #6A7AFF; */
+    /* box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.5); */
+   
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  
+}
+
+.home_encabezado_foto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.home_encabezado_foto img{
+    width: 50%;
+}
+
+
+.home_encabezado_title_name{
+    width: 50%;
+}
+
+.home_encabezado_title_name h2{
+   
+    color: var(--colorBaseVeterinaria);
+    font-family: var( --Permanent-Marker);
+    font-weight: 900;
+    font-style: normal;
+    font-size: 75px;
+}
+
+.home_encabezado_title_name h3{
+   
+    color: #6a79ffab;
+    font-family: var( --Permanent-Marker);
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.home_encabezado_title_name p{
+  width: 75%;
+  margin-top: 20px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-style: cursive;
+  font-size: 17px;
+}
+/*encabezado*******************************************************/
+
+
+
+
+/*aside*********************************************************/
+
+
+.home_contenido aside{
+    /* background-color: red; */
+   
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.aside_left_botton{
+    width: 5%;
+    background-color: var(--colorBaseVeterinaria);
+    
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.aside_left_botton i:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+   transition: 0.5s;
+  
+}
+
+.aside_options{
+    width: 91%;
+    display: flex;
+    
+    overflow-x: auto;
+    white-space: nowrap; /* Evita que los enlaces se envuelvan, los hace en una sola linea */
+    border: 3px solid var(--colorBaseVeterinaria);
+}
+
+.aside_options::-webkit-scrollbar {
+    display: none;
+}
+
+.aside_options a{
+  
+    text-decoration: none;
+    color: var(--colorBaseVeterinaria);
+    font-family: var(--Alegreya-Sans);
+    font-weight: 500;
+    font-style: cursive;
+    font-size: 17px;
+    margin: 7px 15px;
+
+   
+    padding: 10px;
+
+   
+  
+}
+
+.aside_right_botton{
+    width: 5%;
+    background-color: var(--colorBaseVeterinaria);
+    
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_right_botton i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+   
+ }
+
+/*aside*********************************************************/
+
+
+.home_contenido_titulo{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.home_contenido_titulo h2{
+
+    color: var(--colorBaseVeterinaria);
+    font-family: var( --Permanent-Marker);
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+
+
+/*articulos*********************************************/
+
+.home_contenido_articulos {
+    
+    padding: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  
+    
+    max-width: 1200px;
+    /* height: 815px; */
+    /* overflow-y: auto; */
+    margin-top: 50px;
+    /* background-color: red; */
+    
+}
+
+.home_contenido_articulos::-webkit-scrollbar {
+    display: none;
+}
+
+.home_contenido_articulos article{
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+    padding: 20px;
+
+    margin: 20px;
+   
+    text-align: center;
+    
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.home_contenido_articulos article img{
+    width: 55%;
+    margin-bottom: 20px;
+   
+}
+
+.home_contenido_articulos article h3{
+    
+    font-family:  sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--colorBaseVeterinaria);
+    margin-bottom: 10px;
+   
+}
+
+
+
+
+
+
+@media all and (max-width:1294px){
+
+    .home_encabezado_title_name p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .home_contenido_articulos {
+        grid-template-columns: repeat(3, 1fr);  
+    }
+
+   
+   
+}
+
+
+
+@media all and (max-width:1080px){
+
+    .home_contenido_articulos {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    .home_encabezado{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .home_encabezado_title_name{
+        text-align: center;
+        width: 80%;
+    }
+
+    .home_encabezado_title_name p{
+        font-size: 17px;
+    }
+
+    .home_encabezado_foto{
+        width: 80%;
+    }
+
+
+
+    .aside_options{
+        width: 84%;
+    }
+    .aside_left_botton{
+        width: 8%; 
+    }
+    .aside_right_botton{
+        width: 8%;
+    }
+    
+   
+}
+
+@media all and (max-width:726px){
+
+    .home_contenido_articulos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home_encabezado_title_name h2{
+   
+        color: var(--colorBaseVeterinaria);
+        font-family: var( --Permanent-Marker);
+        font-weight: 900;
+        font-style: normal;
+        font-size: 35px;
+    }
+
+
+    .aside_options{
+        width: 80%;
+    }
+    .aside_left_botton{
+        width: 10%; 
+    }
+    .aside_right_botton{
+        width: 10%;
+    }
+
+   
+}
+
+
+@media all and (max-width:450px){
+
+    .aside_options{
+        width: 70%;
+    }
+    .aside_left_botton{
+        width: 15%; 
+    }
+    .aside_right_botton{
+        width: 15%;
+    }
+
+   
+}
+
+/*reyect estuduar*/
